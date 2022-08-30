@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Builder.Classes;
+using System;
 
 namespace Builder
 {
@@ -6,7 +7,14 @@ namespace Builder
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var Hp = new FluentComputerBuilder("Pavilion")
+                .WithHard("512 SSd")
+                .WithKeyboard("Type A")
+                .WithRam("8 G")
+                .WithScreenSize("16")
+                .WithOperatingSystem("window 10")
+                .Build();
+            Console.WriteLine(Hp.ToString());
         }
     }
 }
