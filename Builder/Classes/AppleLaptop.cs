@@ -6,7 +6,7 @@ namespace Builder.Classes
 {
     public class AppleLaptop : ComputerBuilder
     {
-        public AppleLaptop()
+        public AppleLaptop(string name)
         {
             computer = new Computer("Apple MacBook");
         }
@@ -17,7 +17,7 @@ namespace Builder.Classes
 
         public override void AddKeyboard()
         {
-            computer["keyboad"] = "type A";
+            computer["keyboard"] = "type A";
         }
 
         public override void AddMonitorOperatingSystem()
@@ -34,5 +34,6 @@ namespace Builder.Classes
         {
             computer["screen_size"] = "15.4";
         }
+
     }
 }

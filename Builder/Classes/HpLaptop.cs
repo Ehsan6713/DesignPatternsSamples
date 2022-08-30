@@ -6,9 +6,9 @@ namespace Builder.Classes
 {
     public class HpLaptop : ComputerBuilder
     {
-        public HpLaptop()
+        public HpLaptop(string name)
         {
-            computer = new Computer("Pavilion");
+            computer = new Computer(name);
         }
 
         public override void AddHard()
@@ -18,7 +18,7 @@ namespace Builder.Classes
 
         public override void AddKeyboard()
         {
-            computer["keyboad"] = "type B";
+            computer["keyboard"] = "type B";
         }
 
         public override void AddMonitorOperatingSystem()
